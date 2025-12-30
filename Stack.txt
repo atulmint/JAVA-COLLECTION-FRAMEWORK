@@ -1,0 +1,78 @@
+# 🧩 **Stack in Java — Simple Notes**
+
+---
+
+## 📘 **1. What Is a Stack?**
+
+* A **Stack** is a **Last-In, First-Out (LIFO)** data structure.
+* The element added **last** is the **first** to be removed.
+* It is part of the `java.util` package and extends the `Vector` class.
+* Common operations:
+
+  * **push()** → Add an element
+  * **pop()** → Remove the top element
+  * **peek()** → View the top element
+  * **empty()** → Check if the stack is empty
+
+---
+
+## 🧠 **2. Example Code**
+
+```java
+import java.util.Stack;
+
+public class StackExample {
+    public static void main(String[] args) {
+        Stack<String> animals = new Stack<>();
+
+        animals.push("Lion");
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+
+        System.out.println("Stack: " + animals);
+
+        System.out.println("Top element (peek): " + animals.peek());
+
+        animals.pop();  // Removes the top element ("Cat")
+
+        System.out.println("Stack after pop: " + animals);
+
+        System.out.println("Top element now (peek): " + animals.peek());
+    }
+}
+```
+
+```
+Stack: [Lion, Dog, Horse, Cat]
+Top element (peek): Cat
+Stack after pop: [Lion, Dog, Horse]
+Top 
+
+---
+
+## 🧾 **3. Step-by-Step Explanation**
+
+| Operation               | Description                                | Output                    |
+| ----------------------- | ------------------------------------------ | ------------------------- |
+| `animals.push("Lion")`  | Adds “Lion” to the stack                   | `[Lion]`                  |
+| `animals.push("Dog")`   | Adds “Dog”                                 | `[Lion, Dog]`             |
+| `animals.push("Horse")` | Adds “Horse”                               | `[Lion, Dog, Horse]`      |
+| `animals.push("Cat")`   | Adds “Cat”                                 | `[Lion, Dog, Horse, Cat]` |
+| `animals.peek()`        | Shows top element (`Cat`) without removing | `Cat`                     |
+| `animals.pop()`         | Removes top element (`Cat`)                | `[Lion, Dog, Horse]`      |
+| `animals.peek()`        | Now shows new top (`Horse`)                | `Horse`                   |
+
+---
+
+element now (peek): Horse
+```
+
+## 💡 **5. Key Points to Remember**
+
+* Stack follows **LIFO (Last In, First Out)** principle.
+* `push()` → Add
+* `pop()` → Remove top element
+* `peek()` → View top element without removing it
+* `empty()` → Returns `true` if stack has no elements
+
