@@ -1,6 +1,4 @@
-Oh nice — this is a **perfect Queue example in Java!** Let’s walk through it step by step and also see the **output** 🤩
 
-Here’s what your code is doing:
 
 ```java
 Queue<Integer> queue = new LinkedList<>();
