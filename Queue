@@ -16,7 +16,7 @@ System.out.println(queue);
 System.out.println(queue.peek());
 ```
 
-### 🔍 Explanation (line by line)
+###  Explanation (line by line)
 
 1. `Queue<Integer> queue = new LinkedList<>();`
 
@@ -75,7 +75,7 @@ System.out.println(queue.peek());
 
 ---
 
-## ✅ Final Output of your program
+##  Final Output of your program
 
 ```
 [12, 24, 36]
@@ -86,7 +86,7 @@ System.out.println(queue.peek());
 
 ---
 
-### 🧠 Quick concepts you just used
+###  Quick concepts you just used
 
 * `offer()` → add element
 * `poll()` → remove + return head
