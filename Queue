@@ -95,10 +95,3 @@ System.out.println(queue.peek());
 * `peek()` → return head only
 * **FIFO order**
 
----
-
-If you want, I can also:
-✨ add a diagram of queue operations
-✨ convert this into short exam notes
-✨ write comments inside code
-✨ give similar example for `Stack` or `PriorityQueue`
