@@ -68,7 +68,7 @@ Top
 element now (peek): Horse
 ```
 
-## 💡 **5. Key Points to Remember**
+## 💡 **5. Key Points to Remember.
 
 * Stack follows **LIFO (Last In, First Out)** principle.
 * `push()` → Add
