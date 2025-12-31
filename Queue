@@ -1,0 +1,104 @@
+Oh nice — this is a **perfect Queue example in Java!** Let’s walk through it step by step and also see the **output** 🤩
+
+Here’s what your code is doing:
+
+```java
+Queue<Integer> queue = new LinkedList<>();
+
+queue.offer(12);
+queue.offer(24);
+queue.offer(36);
+
+System.out.println(queue);
+
+System.out.println(queue.poll());
+
+System.out.println(queue);
+
+System.out.println(queue.peek());
+```
+
+### 🔍 Explanation (line by line)
+
+1. `Queue<Integer> queue = new LinkedList<>();`
+
+   * Creates a **Queue** using **LinkedList implementation**
+   * Follows **FIFO (First In First Out)**
+
+2. `queue.offer(12);`
+
+3. `queue.offer(24);`
+
+4. `queue.offer(36);`
+
+   * Adds elements to queue
+   * Queue now looks like:
+
+     ```
+     [12, 24, 36]
+     ```
+
+5. `System.out.println(queue);`
+
+   * Prints whole queue
+   * Output:
+
+     ```
+     [12, 24, 36]
+     ```
+
+6. `System.out.println(queue.poll());`
+
+   * **Removes and returns head element**
+   * Removes `12`
+   * Output:
+
+     ```
+     12
+     ```
+
+7. `System.out.println(queue);`
+
+   * Queue after removal:
+
+     ```
+     [24, 36]
+     ```
+
+8. `System.out.println(queue.peek());`
+
+   * **Returns head without removing**
+   * Head = `24`
+   * Output:
+
+     ```
+     24
+     ```
+
+---
+
+## ✅ Final Output of your program
+
+```
+[12, 24, 36]
+12
+[24, 36]
+24
+```
+
+---
+
+### 🧠 Quick concepts you just used
+
+* `offer()` → add element
+* `poll()` → remove + return head
+* `peek()` → return head only
+* **FIFO order**
+
+---
+
+If you want, I can also:
+✨ add a diagram of queue operations
+✨ convert this into short exam notes
+✨ write comments inside code
+✨ give similar example for `Stack` or `PriorityQueue`
