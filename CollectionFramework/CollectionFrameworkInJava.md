@@ -2,7 +2,7 @@
 
 ### Need of Collection Framework
 
-If I need to represent three integer values, we go for:
+If I need to represent three integer values, we go for
 
 ```
 int x = 10;
